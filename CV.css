@@ -1,0 +1,187 @@
+/* Template One */
+
+/* .template-one {
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+} */
+
+
+
+div.input-field {
+    margin: auto;
+    width: 70%;
+}
+
+/* Buttons */
+
+div.buttons {
+    margin: auto;
+    width: 25%;
+    margin-top: 20px;
+}
+
+
+
+.level-data {
+    width: 100%;
+}
+
+
+#main-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#container1 {
+    background: #F8AFA6;
+    width: 30%;
+    /* text-align: center; */
+}
+
+#container2 {
+    background-color:#F79489;
+    width: 60%;
+    /* text-align: center; */
+}
+
+#interest {
+    /* background-color: #FADCD9; */
+    width:100% ;
+
+}
+
+#interest>ul {
+    list-style-type: decimal-leading-zero;
+}
+
+#language {
+    /* background-color: rg#FADCD9; */
+    margin-top: 20px;
+}
+#personal{
+    
+}
+
+#language>ul {
+    list-style-type: none;
+}
+
+.input-fields {
+    padding: 20px;
+    
+    /* display: none !important; */
+}
+
+/* .container {
+    width: 100%;
+    background-image: url('./pngtree-creative-minimalist-literary-application-resume-background-material-image_126542.jpg');
+    background-size: cover;
+    
+} */
+input{
+    height: 30px;
+    width:90% ;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+body, html {
+     /* height: 100%; */
+    margin: 0px; 
+    padding: 0px;
+ /* overflow:hidden; */
+ 
+   }
+
+   *{
+    margin: 0px;
+    padding: 0px;
+    
+   }
+  
+  #bg {
+    /* The image used */
+    
+    background-image: url("./Green-Background-Resume-Template.webp");
+  opacity: 0.8;
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+  }
+  #btn{
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100px;
+    height: 40px;
+    background-color: #5a5555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #summary{
+    margin: auto;
+    width: 90%;
+    padding-bottom:30px ;
+    border-bottom: 2px solid red;
+  }
+
+  /* .dotted-line {
+    width: 2px;
+    height: 100px; 
+    border-left: dotted 2px #000;
+  } */
+   li{
+    list-style-position: inside;
+    width: 90%;
+   }
+   #btndownload,#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    height: 50px;
+    background-color: #5a5555;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  font-size:larger ;
+    transition: background-color 0.3s ease;
+   }
+   #btndownload:hover{
+    background-color: #333333;
+   }
+
+   @media screen and (max-width: 600px) {
+    #bg {
+        background-size: contain;
+    }
+    #container1, #container2 {
+        width: 100%;
+    }
+    .input-fields {
+        display: none !important;
+    }
+    #btn{
+        width: 100%;
+    }
+    #summary{
+        width: 100%;
+    }
+    #btndownload{
+        width: 100%;
+    }
+  }
+  #main-main{
+    display: none;
+  }

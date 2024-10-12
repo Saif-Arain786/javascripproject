@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv generator</title>
+
+    <link rel="stylesheet" href="./CV.css">
+
+</head>
+
+<body>
+   <h1 style="text-align: center;background-color:#E9EBF2 ;">CV GENERATOR</h1>
+    <!-- Input Fields Starts Here-->
+    <div id="bg">
+
+        <div class="input-field container" >
+            <div id="personal" >
+                <h2>Personal Information</h2>
+                <input type="file" accept="image/*" id="imageInput">
+                <input type="text" placeholder="Enter Name" id="userName">
+                <input type="email" placeholder="Enter Email" id="email">
+                <input type="text" placeholder="Enter Course Name" id="course">
+                <input type="text" placeholder="Enter your linkdin" id="rollNo">
+            </div>
+            <div id="interest-input">
+                <h2>Enter GAMES </h2>
+                <input type="text" id="int1" placeholder="Enter Your favourite game">
+                <input type="text" id="int2" placeholder="Enter your game">
+                <input type="text" id="int3" placeholder="Enter Game">
+            </div>
+            <div id="interest-input" >
+                <h2>Enter languages</h2>
+                <input type="text" id="lang1" placeholder="Enterlanguage have mediam command">
+                <input type="text" id="lang2" placeholder="Enterlanguage have high command">
+                <input type="text" id="lang3" placeholder="Enterlanguage have normal command">
+            </div>
+
+            <div id="name">
+                <h2>Description</h2>
+                <input type="textarea" id="description" placeholder="description">
+            </div>
+
+
+            <div id="input-field">
+                <H2>WORK EXPERIENCE</H2>
+                <input type="text" placeholder="skill one" id="develop">
+                <input type="textarea" id="skilldesc" placeholder="skill description">
+                <input type="text" placeholder="skill two" id="develop1">
+                <input type="textarea" id="skilldesc1" placeholder="skill description">
+                <input type="text" placeholder="skill three" id="develop2">
+                <input type="textarea" id="skilldesc2" placeholder="skill description">
+                
+              <div>
+                <h2>EDUCATION</h2>
+                <input type="text" id="education" placeholder=" enter education you pass">
+
+                <input type="text" id="edudes" placeholder="ENTER SOME ABOUT EDUCATION">
+
+                <input type="text" id="edudes1" placeholder="ENTER YOUR CERTIFICATION LINKS">
+              </div>
+              <DIV>
+                <h2>SKILLS</h2>
+                <input type="text" id="cert111" placeholder="expertise">
+                </input>
+                <input type="text" placeholder="expertise" id="cert222">
+            </input>
+            <input type="text" placeholder="expertise" id="cert333">
+        </input>
+
+        <h3>CV Text COlor</h3>
+        <input type="color" id="colors" placeholder="left container color">
+
+        <h3>CV LEFT SIDE COLOR</h3>
+           <input type="color" id="cont5" value="#e1c5ad">
+
+           <h3>CV right SIDE COLOR</h3>
+           <input type="color" id="cont6" value="#fff8f2">
+    </DIV>
+
+            
+        </div>
+
+       
+           
+        </div>
+
+        <!-- Input Fields Ends Here -->
+        <!-- Buttons Start Here -->
+        <div class="buttons">
+            <button id="btn" onclick="templateOne()">GENERATE</button>
+        </div>
+        <!-- Buttons Ends Here -->
+        <!-- Template 01 -->
+
+<div id="main-main">
+        <div id="main-div">
+            <div id="container1" style="padding-left: 20PX;">
+                <div class="img">
+                    <img id="imagePreview" src="" alt="Image Preview"
+                        style="height: 150PX;width: 150PX; border-radius: 50%; object-fit: cover; " >
+
+                    <div class="template-one" id="templateOne">
+                        <h2>Personal info</h2>
+                        <h3>Name :</h3>
+                        <h2 id="userNames"></h2>
+                        <h3>Email:</h3>
+                        <h2 id="emails"></h2>
+                        <h3>course :</h3>
+                        <h2 id="syllabus"></h2>
+                        <h3>linkdin :</h3>
+                        <h2><a id="rollNos" href=""></a></h2>
+                    </div>
+                    <div id="interest">
+                        <h2>INTEREST</h2>
+                        <ul>
+                            <li id="inte1"></li>
+                            <li id="inte2"></li>
+                            <li id="inte3"></li>
+                        </ul>
+                    </div>
+                    <div id="language">
+                        <h2>LANGUAGE</h2>
+                        <ul>
+                            <li id="lan1"></li>
+                            <li id="lan2"></li>
+                            <li id="lan3"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="container2" style="padding-left: 20PX;">
+                <div id="des">
+                    <h1 id="nam"></h1>
+                    <p id="summary"></p>
+                    <hr style=" width: 95%; margin:10px auto;">
+                </div>
+                <div id="experience" style="border-bottom: 2px solid red;width: 90%;margin: auto;">
+                    <H2> WORK EXPERIENCE</H2>
+                    <h3 id="skill1"></h3>
+                    <p id="skill1des"></p>
+
+                    <h3 id="skill2"></h3>
+                    <p id="skill2des"></p>
+
+                    <h3 id="skill3"></h3>
+                    <p id="skill3des"></p>
+                    <hr style=" width: 95%; margin:10px auto;">
+                </div>
+                <div id="education" style="border-bottom: 2px solid red;width: 90%;margin: 10px auto;padding: 10px;">
+                    <H2>EDUCATION</H2>
+                    <h3 id="edu1"></h3>
+                    <p id="edu1des"></p>
+                    <a href="" id="links"></a>
+                    <hr style=" width: 95%; margin: auto;">
+            </div>
+            <div style="width: 90%;">
+                <h2 >SKILLS</h2>
+                <ul>
+                    <li id="cert11"></li>
+                    <li id="cert22"></li>
+                    <li id="cert33"></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+  <button onclick="downloadInnerDivAsPDF()"  id="btndownload">download</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+    <script src="./CV.js"></script>
+    <!-- <div class="dotted-line"></div> -->
+</body>
+
+</html>
